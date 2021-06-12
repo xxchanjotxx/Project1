@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
 </head>
+
+
 <body>
+    <!-- NAVIGATION BAR-->
     <header>
         <nav class="navbar">
             <div class="navbar__brand">
@@ -20,12 +23,14 @@
             </div>
         </nav>
     </header>
+
+    <!-- MAIN PAGE -->
     <main class="container">
+
+        <!-- HERO SECTION -->
         <section class="hero__container">
             <div class="hero__image_container">
                 <img src="./assets/hero.jpg" alt="hero image" class="hero__image">
-                 <!--<img src="./assets/svg/herobgpattren.svg" alt="pattern">
-                <img src="./assets/svg/heroShape.svg" alt="solid pattern">     -->
             </div>
             <div class="hero__des">
                 <h1 class="hero__text"> Order food from favourite restaurants near you</h1>
@@ -33,21 +38,64 @@
             </div>
         </section>
 
-
-        <!-- Explore Menu-->
+        <!-- EXPLORE MENU -->
         <section class="explore__menu__container">
-            <h1 class="explore__menu__text">Explore our menu</h1>
+            <h1 class="explore__menu__text">Explore our Menu</h1>
             <div class="explore__menu__lists">
+
+                <!-- BURGER -->
                 <div class="food__menu__card">
-                    <img src="./assets/burger.jpg" alt="burger" class="food__image">
-                    <div class="food__menu__card__description">
-                        <h3 class="food__title"></h3>
-                    </div>
+                        <img src="./assets/burger.jpg" alt="burger" class="food__image">
+                        <div class="food__menu__text">
+                            <h3 class="food__title">Burgers</h3>
+                            <p class="food__restaurants">
+                                Burger King, Mcdonald's, Burger Place
+                                <span style="color: red;">+3</span>
+                            </p>
                 </div>
+            </div>
+                <!-- PIZZA -->
+                <div class="food__menu__card">
+                        <img src="./assets/pizza.jpg" alt="pizza" class="food__image">
+                        <div class="food__menu__text">
+                            <h3 class="food__title">Pizza</h3>
+                            <p class="food__restaurants">
+                                Pizza Hut, Domino's Pizza
+                                <span style="color: red;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+
+                <!-- ICE-CREAM -->
+                <div class="food__menu__card">
+                        <img src="./assets/iceCream.jpg" alt="ice-cream" class="food__image">
+                        <div class="food__menu__text">
+                            <h3 class="food__title">Ice-Cream</h3>
+                            <p class="food__restaurants">
+                               Baskin Robins, Ibaco
+                                <span style="color: red;">+3</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="explore__menu__view__more">
+                        <button class="button_primary">
+                            View more
+                        </button>
+                    </div>
+              
 
             </div>
 
+
+
+
+
+
         </section>
+
+
+       
     </main>
 </body>
 </html>
