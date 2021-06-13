@@ -84,6 +84,10 @@ body {
     width: 100%;
     border-radius: 8px;
 }
+.pattern{
+    position: absolute;
+   
+}
 .food__image{
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -98,25 +102,29 @@ body {
 }
 
 @media (min-width: 768px) {
-  .navbar {
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-  .navbar__brand {
-    width: 150px;
-  }
-  .button_primary {
-    padding: 20px;
-    font-size: 20px;
-  }
-  .hero__container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-  }
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+      .navbar__brand {
+        width: 150px;
+      }
+      .button__primary {
+        padding: 12px 20px;
+        font-size: 20px;
+      }
+      .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .explore__menu__lists{
+          display: flex;
+          gap:10px;
+          margin-top: 50px;
+      }
 }
 @media (min-width: 1020px) {
   .navbar {
