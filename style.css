@@ -10,18 +10,25 @@ body {
 }
 
 /* NAVIGATION BAR */
+
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 13px;
+  background-color: #f9fafc;
 }
+
 .navbar__brand {
   width: 100px;
 }
+
 .navbar__logo {
   width: 100%;
 }
+
 .button_primary {
   background-image: linear-gradient(
     to right,
@@ -38,6 +45,7 @@ body {
 }
 
 /* HERO SECTION */
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -113,13 +121,137 @@ body {
   cursor: pointer;
 }
 
+
+/* RESTO GRID */
+
+.restaurants__text{
+  font-size: 25px;
+  color: #1d3557;
+  margin: 20px 0px;
+  padding-bottom: 20px;
+}
+
+.restaurant__row1,.restaurant__row2{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  
+}
+
+.restaurant__1,
+.restaurant__2,
+.restaurant__3,
+.restaurant__4{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.rest__1, .rest__4{
+  height: 100px;
+  width: 100%;
+}
+
+.rest__2, .rest__3{
+  height: 150px;
+  width: 120%;
+}
+
+.restaurant__row1{
+  align-items: baseline;
+  margin-bottom: 10px; 
+}
+
+
+/* STAY UPDATED */
+
+.stay__updated__container{
+  width: 100%;
+  
+}
+
+.stay__updated__text{
+  padding-top: 70px;
+  padding-left: 10px;
+}
+
+.stay__updated{
+  font-size: 25px;
+  color: #1d3557;
+  margin-bottom: 8px;
+}
+
+.stay__updated__flex{
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: baseline;
+}
+
+.email{
+  border: 1px solid #ee89a0;
+  background-color: #fcedf0;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.get__updates__button{
+  width: 100%;
+}
+
+.get__updates{
+  width: 85%;
+  padding: 7px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.87em;
+
+}
+
+
+/* RESTAURANT QUOTE */
+
+.restaurant__quote__container{
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border-radius: 13px;
+  background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+  center center/ cover no-repeat;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant__quote__image{
+  width: 100%;
+  position: absolute;
+  background-color: #0a4065;
+  opacity: 50%;
+  height: 200px;
+  border-radius: 13px;
+}
+
+
+.restaurant__quote__text{
+  position: absolute;
+  color: #fff;
+  text-align: center;
+ 
+}
+
+
+
 @media (min-width: 768px) {
   .navbar {
     justify-content: space-between;
     padding: 10px 20px;
     width: 100%;
     height: 80px;
-    background-color: #f9fafc;
+    
     margin-bottom: 20px;
   }
 
@@ -172,6 +304,56 @@ body {
     z-index: -3;
     transform: skewY(-5deg);
   }
+
+  .restaurants__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    
+    
+  }
+  .restaurants__grid{
+    padding-left: 80px;
+    margin-left: 80px;
+
+  }
+
+  .restaurants__text{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
+ 
+
+  .stay__updated__container{
+    padding-left: 100px;
+  }
+
+  .stay__updated{
+    font-size: 2em;
+  }
+
+  .stay__updated__flex{
+    align-items: baseline;
+    padding: 20px;
+  }
+  
+  .email{
+    padding: 10px;
+  }
+  .get__updates__button{
+    padding: 10px;
+    padding-left: 0px;
+    
+    
+  }
+  
+
+
+
+
+
 }
 
 @media (min-width: 1020px) {
