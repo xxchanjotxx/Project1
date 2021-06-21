@@ -148,13 +148,13 @@ body {
 }
 
 .rest__1, .rest__4{
-  height: 100px;
+  height: 120px;
   width: 100%;
 }
 
 .rest__2, .rest__3{
   height: 150px;
-  width: 120%;
+  width: 130%;
 }
 
 .restaurant__row1{
@@ -242,6 +242,47 @@ body {
   text-align: center;
  
 }
+
+
+/* FOOTER */
+.footer__container{
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  margin-top: 80px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.footer__logo{
+  width: 70%;
+  padding-left: 90px;
+  filter: brightness(100) ;
+}
+
+.footer__list{
+  padding-top: 10px;
+}
+
+li{
+  color: #fff;
+  font-weight: bold;
+  list-style: none;
+  
+}
+.footer__list__item{
+  
+  padding-left: 30%;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
 
 
 
