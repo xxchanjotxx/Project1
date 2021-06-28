@@ -57,7 +57,7 @@ body {
   padding-bottom: 50px;
 }
 
-.hero__image__container {
+.hero__image_container {
   width: 100%;
   position: relative;
 }
@@ -213,6 +213,7 @@ body {
 
 .restaurant__quote__container{
   width: 100%;
+  height: 100%;
   position: relative;
   margin-top: 50px;
   display: flex;
@@ -221,6 +222,7 @@ body {
   border-radius: 13px;
   background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
   center center/ cover no-repeat;
+  
 
   align-items: center;
   justify-content: center;
@@ -231,7 +233,7 @@ body {
   position: absolute;
   background-color: #0a4065;
   opacity: 50%;
-  height: 200px;
+  height: 100%;
   border-radius: 13px;
 }
 
@@ -370,31 +372,44 @@ li{
   .stay__updated__container{
     padding-left: 100px;
   }
-
   .stay__updated{
+    font-weight:1000;
     font-size: 2em;
   }
-
-  .stay__updated__flex{
-    align-items: baseline;
-    padding: 20px;
-  }
-  
   .email{
-    padding: 10px;
+    padding-right:170px;
+
   }
   .get__updates__button{
-    padding: 10px;
-    padding-left: 0px;
-    
-    
+    padding-right: 20%;
+   
+
   }
-  
+  .get__updates{
+    padding: 5px;
 
+  }
 
-
-
-
+  .restaurants__text{
+    font-size: 1.8em;
+    text-align: left;
+    font-weight: 1000;
+  }
+  .text__class{
+    width: 40%;
+  }
+  .restaurants__grid{
+    margin-left: 10px;
+    padding-left: 0px;
+    width: 60%;
+  }
+  .footer__container{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  footer{
+    display: flex;
+  }
 }
 
 @media (min-width: 1020px) {
@@ -410,10 +425,18 @@ li{
     padding-bottom: 100px;
   }
 
-  .hero__image__container {
-    width: 100%;
+  .hero__image_container{
+    position: relative;
   }
 
+  .hero__imagee{
+   
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -3;
+  }
+  
   .hero__text {
     font-size: 50px;
   }
@@ -443,10 +466,71 @@ li{
     gap: 20px;
     padding: 0px 20px;
   }
+
+  .restaurants__text{
+    font-size: 3.5em;
+    text-align: left;
+    font-weight: 1000;
+  }
+
+  .restaurants__container{
+    margin-top: 250px;
+    margin-bottom: 120px;
+    
+  }
+  .rest__1, .rest__4{
+    height: 100%;
+    width: 110%;
+  }
+  
+  .rest__2, .rest__3{
+    height: 0%;
+    width: 90%;
+  }
+
+  .stay__updated__text{
+    font-size: 1.7em;
+  }
+
+  .stay__updated__container{
+    margin-left: 150px;
+    padding-bottom: 100px;
+  }
+
+  footer{
+    justify-content: space-evenly;
+  }
+
+  .footer__logo{
+    width: 90%;
+  }
+  
+  .email{
+    padding-right: 300px;
+  }
+
+  .get__updates__button{
+    padding-right: 40%;
+  }
+
+  .restaurant__quote__container{
+    width: 100%;
+    height: 500px;
+
+  }
+  .restaurant__quote__text{
+    font-size: 3em;
+  }
+  
+
 }
+
+
+
 
 @media (min-width: 1400px) {
   .container {
     max-width: 1300px;
   }
+
 }
